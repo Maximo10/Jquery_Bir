@@ -1,0 +1,43 @@
+javascript  | css   | html 
+
+En este tirmetre Jquery
+
+Eventos jquery
+$("elemento").click para manejar clics en $("elemento")
+$("elemento").mouseenter para manejar el evento de pasar el mouse sobre $("elemento")
+$("elemento").mouseleave para manejar el evento de salir del mouse sobre $("elemento")
+$("elemento").keyup para manejar el evento de soltar una tecla en $("elemento")
+
+
+$("elemento").text para establecer el texto de $("elemento")
+$("elemento").css .css("propiedad", "valor") para establecer una propiedad CSS en $("elemento")
+$("elemento").toggleClass para alternar una clase en $("elemento")
+$(this).val() para obtener o establecer el valor de un campo de entrada
+$("elemento").append() para agregar contenido al final de $("elemento")
+$("elemento").hide() para ocultar $("elemento")
+$("elemento").show() para mostrar $("elemento")
+$("elemento").hasClass para verificar si $("elemento") tiene una clase específica
+$("elemento").is para verificar si $("elemento") coincide con un selector específico
+$("elemento").html( contenido HTML en $("elemento"))
+$.each itera sobre una colección de elementos.
+
+
+
+
+
+
+
+
+
+// MODO OSCURO / CLARO
+$(".modos").click(function () {
+  $("body").toggleClass("modo-oscuro")
+  // Cambiar el texto del botón según el modo actual
+  if ($("body").hasClass("modo-oscuro")) {
+    $(this).text("Modo claro")
+    mostrarMensaje("Modo oscuro activado")
+  } else {
+    $(this).text("Modo oscuro")
+    mostrarMensaje("Modo claro activado")
+  }
+})

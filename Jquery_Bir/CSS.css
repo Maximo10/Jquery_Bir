@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: white;
+    color: black;
+    line-height: 1.6;
+    width: 100%;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 20px 40px;
+    box-shadow: 0 4px 6px black;
+}
+header h3{
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+}
+.modos{
+    padding: 10px 15px;
+    border-radius: 20px;
+}
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 40px;
+    align-items: start;
+}
+.main p {
+    padding: 10px;
+    line-height: 1.6;
+}
+.main img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+footer{
+    text-align: center;
+    margin-top: 3rem;
+    padding: 1.25rem;
+    color: gray;
+    border-top: 5px solid #333;
+    width: auto;
+}
+
+/* Estilo para modo oscuro */
+body.modo-oscuro {
+    background-color: #121212;
+    color: #eeeeee;
+}
+
+body.modo-oscuro header {
+    background-color: #1f1f1f;
+}
+
+body.modo-oscuro .modos {
+    background-color: white;
+    color: #fff;
+}
+
+body.modo-oscuro p,
+body.modo-oscuro h3 {
+    color: #e0e0e0;
+}
+
